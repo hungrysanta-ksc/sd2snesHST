@@ -1,0 +1,8 @@
+# This repository stores release documentation, not private game data.
+*.zip
+*.gb
+*.gbc
+*.egbc
+*.sav
+*.srm
+*.g13d

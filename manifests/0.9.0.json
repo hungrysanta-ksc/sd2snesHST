@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "product": "sd2snesHST",
+  "version": "0.9.0",
+  "release_status": "draft",
+  "candidate": "G13C44",
+  "target": "FXPAK Pro / Mk.III STM32 + EP4CE15F17C8",
+  "firmware_base": "official sd2snes 1.11.2 installation",
+  "development_repository": "https://github.com/hungrysanta-ksc/fpga-cyclone4-game",
+  "implementation_commit": "35ef4aef14fc6abef6495a980b7f00f257e5174f",
+  "merged_development_commit": "92b4c5a05dc03e63ade15882cb679524cf712f22",
+  "runtime_files": {
+    "firmware.stm": {
+      "bytes": 166816,
+      "sha256": "16b0ed2decd79a289d95a98c075b18d5f086a6e138d7f1f7f1af067d50d95dd5"
+    },
+    "fpga_egbc.bi3": {
+      "bytes": 257992,
+      "sha256": "0bdcb9f995496ea314a41a0b624f1b9c98bc702f2929ab578b5e300c1d4bf647"
+    },
+    "gbc-utc-offset.txt": {
+      "bytes": 5,
+      "sha256": "694e0274991651ba2672f6ec8affa8344fa4e4c8f3c34c96992f8e90fa67f6ae"
+    },
+    "gbc_snes.bin": {
+      "bytes": 131072,
+      "sha256": "7a36dc1fa4355d804ee72ca4aed18250c00c92bd3d8a469c16d8970def8e20ca"
+    }
+  },
+  "save_formats": {
+    "battery": "raw SRAM; MBC3 RTC appends 48 bytes and reads 44/48-byte footer",
+    "state_schema": "00350002",
+    "migration_from_c44": "none"
+  },
+  "diagnostic_file_logs": false,
+  "excluded_runtime": [
+    "SGB core",
+    "SGB BIOS",
+    "game ROM",
+    "private saves",
+    "diagnostic dumps"
+  ],
+  "upstreams": {
+    "sd2snes": {
+      "url": "https://github.com/mrehkopf/sd2snes.git",
+      "commit": "cf7e21d7a5978fcd74981d71c3cfbf6e982a4dd1"
+    },
+    "Gameboy_MiSTer": {
+      "url": "https://github.com/MiSTer-devel/Gameboy_MiSTer.git",
+      "commit": "7a5ff50528cd9c1d13ffb675e7df8506bffaa078"
+    }
+  },
+  "source_archive_note": "Pinned C44 source snapshot; MCU base is obtained by prepare_firmware.py at the pinned upstream commit. Build tools are external.",
+  "assets": {
+    "sd2snesHST-v0.9.0-source.zip": {
+      "bytes": 436114,
+      "sha256": "ad0fc7d0c0b417fe0b33e432e81215c8108ca1e70beb5cb221f84e2bb4a7404b"
+    },
+    "sd2snesHST-v0.9.0-update.zip": {
+      "bytes": 353567,
+      "sha256": "5bdc1fcb191100a0af093f590dab49c7db899ea3818e127f6f795a37c3934be5"
+    }
+  }
+}
