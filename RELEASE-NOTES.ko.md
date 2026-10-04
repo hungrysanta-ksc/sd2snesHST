@@ -9,7 +9,7 @@ FXPAK Pro / Mk.III의 정상 설치된 공식 sd2snes 1.11.2 계열 위에 적�
 
 ## 파일 선택
 - **sd2snesHST-v0.9.0-update.zip**: 설치용 업데이트와 사용 가이드.
-- **sd2snesHST-v0.9.0-source.zip**: 고정 C44 구현 소스·빌드 지침.
+- **sd2snesHST-v0.9.0-source.zip**: C44 실행 소스·고정 MCU 원본·mini FPGA·CGB 부트 빌드 입력과 라이선스.
 - **sd2snesHST-v0.9.0-manifest.json**: 대상 보드·소스·실행 파일·ZIP의 대응 관계.
 - **SHA256SUMS.txt**: 위 3개 파일의 SHA256.
 
@@ -20,5 +20,7 @@ GitHub 자동 생성 Source code ZIP은 사용자 안내 저장소의 사본이�
 
 기존 .gb/.gbc는 SGB 경로를 사용합니다. SGB 코어·BIOS·게임·개인 세이브는 포함하지 않습니다. NES·PCE는 이번 버전에 포함하지 않습니다.
 
-## 초안 검토
-아직 공개 릴리스가 아닙니다. 설치 파일 해시와 소스 대응은 검증했으며, 공개 전에는 출처·배포 고지의 미결 범위를 정리하고 README의 준비 중 안내를 전환합니다.
+## 검증
+C44 실행 파일 3개·설정 파일의 SHA256과 소스 152개 해시를 유지했습니다. 소스 ZIP의 MCU 오프라인 준비 및 원본 손상 거부 검사를 통과했습니다. 설치 ZIP에는 SGB 코어·BIOS·게임·개인 세이브·진단 로그를 포함하지 않습니다.
+
+[출처와 라이선스](https://github.com/hungrysanta-ksc/sd2snesHST/blob/master/THIRD-PARTY-NOTICES.md)

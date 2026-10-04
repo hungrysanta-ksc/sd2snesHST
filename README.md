@@ -8,7 +8,7 @@ sd2snesHST 는 FXPAK Pro 에서 GB/GBC를 비롯한 추가 게임 코어를 사�
 
 비정기적으로 업데이트 되며 AI 에이전트를 적극 활용합니다.
 
-> **0.9.0 배포 준비 중입니다.** 현재 릴리스는 관리자 검토용 초안이며 일반 다운로드는 아직 공개하지 않았습니다.
+> **0.9.0 최종 배포 자료 준비 완료.** 아래 Releases에서 공개된 버전을 확인하세요. 관리자 검토용 초안은 일반 사용자에게 보이지 않습니다.
 
 ## 다운로드와 설치
 
@@ -21,7 +21,7 @@ sd2snesHST 는 FXPAK Pro 에서 GB/GBC를 비롯한 추가 게임 코어를 사�
 - 전원을 끄고 기존 펌웨어·세이브·설정을 백업한 뒤 ZIP의 파일을 같은 폴더에 합쳐 복사합니다.
 - 기존 RTC 시차 설정은 유지하세요. 동봉 `+540`은 한국/일본 현지 시각용입니다.
 - 구형 SD2SNES/Mk.II 및 다른 포크와의 혼합 설치는 검증하지 않았습니다.
-- 한줄 요약 : FXPAK Pro 를 보유중이라면 sd2snes 폴더안에 ZIP 파일 풀어서 붙여넣으면 됩니다.
+- 한줄 요약 : ZIP을 PC에 풀고 **그 안의 `sd2snes` 폴더를 SD 카드 루트의 기존 `sd2snes` 폴더에 합쳐 복사**하면 됩니다. `sd2snes/sd2snes`로 중첩되지 않게 해주세요.
 
 ## 0.9.0 의 기능
 
@@ -40,6 +40,6 @@ sd2snesHST 는 FXPAK Pro 에서 GB/GBC를 비롯한 추가 게임 코어를 사�
 
 [문제 보고](https://github.com/hungrysanta-ksc/sd2snesHST/issues/new/choose)에는 제품 버전, 기기, 게임 이름·지역·패치 버전, 재현 순서와 증상을 적어 주세요. 일반 배포판은 진단 로그를 자동 생성하지 않습니다.
 
-구현 소스와 개발 기록은 [개발 저장소](https://github.com/hungrysanta-ksc/fpga-cyclone4-game)에서 관리합니다. 릴리스의 `sd2snesHST-v0.9.0-source.zip`은 C44 구현 커밋에 대응하는 소스·빌드 지침이며, 이 사용자 저장소의 자동 생성 소스 ZIP과 다릅니다.
+구현 소스와 개발 기록은 [개발 저장소](https://github.com/hungrysanta-ksc/fpga-cyclone4-game)에서 관리합니다. 릴리스의 `sd2snesHST-v0.9.0-source.zip`은 C44 실행 소스와 필요한 MCU 원본·빌드 입력·라이선스·재현 지침을 담으며, 이 사용자 저장소의 자동 생성 소스 ZIP과 다릅니다.
 
 [출처와 고지](THIRD-PARTY-NOTICES.md) · [0.9.0 파일·소스 대응표](manifests/0.9.0.json)
