@@ -2,7 +2,7 @@
 
 ## 0.9.0
 
-GB/GBC 코어를 제공하는 첫 제품 버전입니다.
+Gameboy_MiSTer 기반 GB/GBC FPGA 코어를 FXPAK Pro에 이식한 첫 제품 버전입니다. 초기 구동에는 SameBoy 유래 공개 CGB 부트 코드를 사용합니다.
 
 - `.egbc` GB/GBC 코어와 기존 `.gb` / `.gbc` SGB 경로 공존.
 - SRAM 기록·자동 기록, MBC3 RTC 보존.

@@ -2,6 +2,8 @@
 
 sd2snesHST 0.9.0의 구성별 출처와 라이선스입니다.
 
+0.9.0의 GB/GBC FPGA 코어는 [Gameboy_MiSTer](https://github.com/MiSTer-devel/Gameboy_MiSTer)를 FXPAK Pro에 이식했습니다. 초기 구동에는 Gameboy_MiSTer에 포함된 **[SameBoy](https://github.com/LIJI32/SameBoy) 유래 공개 CGB 부트 코드**를 사용합니다. CPU·화면·사운드 등 게임 실행은 Gameboy_MiSTer 기반 FPGA 로직이 담당하며, SameBoy 소프트웨어 에뮬레이터 전체를 이식한 구성은 아닙니다.
+
 ## HungrySanTa 자체 작성 부분
 
 2026-10-04 소유자 승인에 따라 FPGA 통합 코드는 GPL-3.0-or-later, MCU 코드는 GPL-2.0-only, 독립 도구·렌더러 생성기·문서는 MIT로 제공합니다. 이 사용자 안내 저장소의 자체 문서는 [MIT](LICENSE)를 따릅니다. 원본 파일의 고지와 권리는 유지합니다.

@@ -1,6 +1,8 @@
 # sd2snesHST 사용 가이드
 **sd2snesHST 0.9.0 · GBC 코어 사용 가이드**
 
+0.9.0의 GB/GBC FPGA 코어는 [Gameboy_MiSTer](https://github.com/MiSTer-devel/Gameboy_MiSTer)를 FXPAK Pro에 이식했습니다. 초기 구동에는 Gameboy_MiSTer에 포함된 **[SameBoy](https://github.com/LIJI32/SameBoy) 유래 공개 CGB 부트 코드**를 사용합니다.
+
 ## 1. 준비물
 
 - FXPAK Pro / Mk.III: STM32 MCU와 Cyclone IV EP4CE15F17C8 보드.
@@ -13,7 +15,7 @@
 
 1. 본체 전원을 끄고 SD를 PC에 연결합니다.
 2. 기존 `sd2snes` 폴더를 백업합니다. 특히 `saves`, `gbcstates`, 기존 펌웨어와 설정을 보관합니다.
-3. 배포 ZIP의 `sd2snes` 폴더 안 파일을 SD의 같은 폴더에 복사합니다.
+3. `01-sd2snesHST-v0.9.0-update.zip`을 PC에 풀고, 그 안의 `sd2snes` 폴더에 있는 4개 파일을 SD 카드의 기존 `sd2snes` 폴더에 합쳐 복사합니다. RTC 시차 파일은 다음 단계에 따라 기존 설정을 유지합니다.
 4. 아래 RTC 시차 설정을 확인합니다. 이미 설정 파일이 있으면 자신의 값을 유지합니다.
 5. SD를 기기에 넣고 실행합니다.
 
@@ -83,7 +85,7 @@ Windows에서 파일 확장자 표시를 켜고 이름이 `Example.egbc.gbc`처�
 3. 상태 영역에 **SAVED**가 표시되는지 확인합니다.
 4. 게임으로 복귀하거나 본체 리셋으로 파일 메뉴에 돌아갑니다.
 
-WRITE SRAM은 게임의 저장 RAM을 SD에 기록합니다. 게임 자체에 저장 기능이 없다면 현재 장면을 저장하는 기능은 아닙니다. 자동 기록을 끈 경우에도 직접 WRITE SRAM을 사용할 수 있습니다. 자동 기록·소리 설정은 다음 실행에도 보존됩니다.
+WRITE SRAM은 게임의 저장 RAM을 SD에 기록합니다. 게임 자체에 저장 기능이 없다면 현재 장면을 저장하는 기능은 아닙니다. 자동 기록은 SRAM 변경 감지 후 기록까지 지연이 있습니다. 자동 기록을 끈 경우에도 직접 WRITE SRAM을 사용할 수 있습니다. 자동 기록·소리 설정은 다음 실행에도 보존됩니다.
 
 ### 현재 장면을 저장하고 되돌아오기
 

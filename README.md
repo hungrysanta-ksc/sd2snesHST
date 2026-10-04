@@ -25,8 +25,10 @@ sd2snesHST 는 FXPAK Pro 에서 GB/GBC를 비롯한 추가 게임 코어를 사�
 
 ## 0.9.0 의 기능
 
+0.9.0의 GB/GBC FPGA 코어는 [Gameboy_MiSTer](https://github.com/MiSTer-devel/Gameboy_MiSTer)를 FXPAK Pro에 이식했습니다. 초기 구동에는 Gameboy_MiSTer에 포함된 **[SameBoy](https://github.com/LIJI32/SameBoy) 유래 공개 CGB 부트 코드**를 사용합니다.
+
 GB/GBC 게임 실행, SRAM 저장·자동 기록, MBC3 RTC, 강제 저장 4슬롯, 약 3배 빨리감기, 소리 설정과 게임 리셋을 제공합니다.
-특히 그동안 SFC 에서 실행 불가능했던 GBC 전용 게임의 실행을 지원합니다.
+SFC 실기에서 GBC 전용 게임의 실행을 지원합니다.
 게임 **복사본**의 확장자를 `.egbc`로 바꾸면 새 코어로 실행됩니다. `.gb`와 `.gbc`는 기존 SGB 경로이며 기존 SGB 파일이 필요합니다.
 
 - **L + R + Start**: 코어 메뉴
