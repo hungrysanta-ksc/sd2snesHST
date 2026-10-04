@@ -1,6 +1,6 @@
 # 출처와 라이선스
 
-sd2snesHST 0.9.0의 실행 파일은 검증된 GBC C44와 동일합니다.
+sd2snesHST 0.9.0의 구성별 출처와 라이선스입니다.
 
 ## HungrySanTa 자체 작성 부분
 
@@ -20,9 +20,8 @@ sd2snesHST 0.9.0의 실행 파일은 검증된 GBC C44와 동일합니다.
 
 ## 대응 소스
 
-- 실행 기준: 35ef4aef14fc6abef6495a980b7f00f257e5174f (GBC C44).
-- 최종 소스·고지·도구 기준: a2b1fb59390a96f70bbc8588a63e465831e7e247.
-- source ZIP에 C44 소스 152개, 고정 MCU 기본 소스·mini FPGA 입력, CGB 부트 입력, 해시 목록과 빌드 지침을 함께 제공합니다.
+- 대응 소스·고지·도구 기준: a2b1fb59390a96f70bbc8588a63e465831e7e247.
+- source ZIP에 실행 소스, 고정 MCU 기본 소스·mini FPGA 입력, CGB 부트 입력, 해시 목록과 빌드 지침을 함께 제공합니다.
 - source ZIP의 docs/SOURCE-BUNDLE.ko.md와 LICENSE.md가 정확한 범위와 재현 방법을 설명합니다.
 
 [개발 소스와 고지](https://github.com/hungrysanta-ksc/fpga-cyclone4-game/tree/a2b1fb59390a96f70bbc8588a63e465831e7e247)

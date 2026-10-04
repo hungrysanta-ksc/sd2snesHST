@@ -12,7 +12,7 @@ sd2snesHST 는 FXPAK Pro 에서 GB/GBC를 비롯한 추가 게임 코어를 사�
 
 ## 다운로드와 설치
 
-공개된 버전은 [Releases](https://github.com/hungrysanta-ksc/sd2snesHST/releases)에서 제공합니다. 설치용 파일은 `sd2snesHST-v0.9.0-update.zip`입니다. GitHub의 자동 생성 “Source code” ZIP은 설치 파일이 아닙니다.
+공개된 버전은 [Releases](https://github.com/hungrysanta-ksc/sd2snesHST/releases)에서 제공합니다. 설치용 파일은 `01-sd2snesHST-v0.9.0-update.zip`입니다. GitHub의 자동 생성 “Source code” ZIP은 설치 파일이 아닙니다.
 
 **[설치·조작·저장·RTC 가이드](docs/USER-GUIDE.ko.md)** · [호환성과 지원 범위](docs/COMPATIBILITY.ko.md) · [변경 기록](CHANGELOG.md)
 
@@ -25,7 +25,7 @@ sd2snesHST 는 FXPAK Pro 에서 GB/GBC를 비롯한 추가 게임 코어를 사�
 
 ## 0.9.0 의 기능
 
-실기 검증된 GBC C44를 바탕으로 GB/GBC 게임 실행, SRAM 저장·자동 기록, MBC3 RTC, 강제 저장 4슬롯, 약 3배 빨리감기, 소리 설정과 게임 리셋을 제공합니다.
+GB/GBC 게임 실행, SRAM 저장·자동 기록, MBC3 RTC, 강제 저장 4슬롯, 약 3배 빨리감기, 소리 설정과 게임 리셋을 제공합니다.
 특히 그동안 SFC 에서 실행 불가능했던 GBC 전용 게임의 실행을 지원합니다.
 게임 **복사본**의 확장자를 `.egbc`로 바꾸면 새 코어로 실행됩니다. `.gb`와 `.gbc`는 기존 SGB 경로이며 기존 SGB 파일이 필요합니다.
 
@@ -40,6 +40,6 @@ sd2snesHST 는 FXPAK Pro 에서 GB/GBC를 비롯한 추가 게임 코어를 사�
 
 [문제 보고](https://github.com/hungrysanta-ksc/sd2snesHST/issues/new/choose)에는 제품 버전, 기기, 게임 이름·지역·패치 버전, 재현 순서와 증상을 적어 주세요. 일반 배포판은 진단 로그를 자동 생성하지 않습니다.
 
-구현 소스와 개발 기록은 [개발 저장소](https://github.com/hungrysanta-ksc/fpga-cyclone4-game)에서 관리합니다. 릴리스의 `sd2snesHST-v0.9.0-source.zip`은 C44 실행 소스와 필요한 MCU 원본·빌드 입력·라이선스·재현 지침을 담으며, 이 사용자 저장소의 자동 생성 소스 ZIP과 다릅니다.
+구현 소스와 개발 기록은 [개발 저장소](https://github.com/hungrysanta-ksc/fpga-cyclone4-game)에서 관리합니다. 릴리스의 `02-sd2snesHST-v0.9.0-source.zip`은 0.9.0 실행 소스와 필요한 MCU 원본·빌드 입력·라이선스·재현 지침을 담으며, 이 사용자 저장소의 자동 생성 소스 ZIP과 다릅니다.
 
 [출처와 고지](THIRD-PARTY-NOTICES.md) · [0.9.0 파일·소스 대응표](manifests/0.9.0.json)

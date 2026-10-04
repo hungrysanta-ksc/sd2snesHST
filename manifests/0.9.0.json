@@ -2,12 +2,9 @@
   "schema_version": 1,
   "product": "sd2snesHST",
   "version": "0.9.0",
-  "candidate": "G13C44",
   "target": "FXPAK Pro / Mk.III STM32 + EP4CE15F17C8",
   "firmware_base": "official sd2snes 1.11.2 installation",
   "development_repository": "https://github.com/hungrysanta-ksc/fpga-cyclone4-game",
-  "implementation_commit": "35ef4aef14fc6abef6495a980b7f00f257e5174f",
-  "merged_development_commit": "92b4c5a05dc03e63ade15882cb679524cf712f22",
   "runtime_files": {
     "firmware.stm": {
       "bytes": 166816,
@@ -28,8 +25,7 @@
   },
   "save_formats": {
     "battery": "raw SRAM; MBC3 RTC appends 48 bytes and reads 44/48-byte footer",
-    "state_schema": "00350002",
-    "migration_from_c44": "none"
+    "state_schema": "00350002"
   },
   "diagnostic_file_logs": false,
   "excluded_runtime": [
@@ -51,13 +47,13 @@
   },
   "source_archive_note": "Includes pinned upstream MCU, mini FPGA and CGB boot build inputs; offline MCU preparation supported.",
   "assets": {
-    "sd2snesHST-v0.9.0-source.zip": {
+    "01-sd2snesHST-v0.9.0-update.zip": {
+      "bytes": 352823,
+      "sha256": "e862621c0b9a330df4793ac0c179dfe14565801827892eba21ef832a0b62334f"
+    },
+    "02-sd2snesHST-v0.9.0-source.zip": {
       "bytes": 1391336,
       "sha256": "060b1a3a4626e32608dc4e0f5d0ce762b80879ada0b56f931046bec6bb164b86"
-    },
-    "sd2snesHST-v0.9.0-update.zip": {
-      "bytes": 355428,
-      "sha256": "b40a549dbc841710aebb30b5af1a2f9cc4262790355a2c38593c05c568c8c9bd"
     }
   },
   "package_status": "verified",
@@ -67,5 +63,11 @@
     "own_mcu": "GPL-2.0-only",
     "own_independent_tools_renderer_docs": "MIT",
     "upstream": "Original file/component notices retained"
-  }
+  },
+  "release_asset_order": [
+    "01-sd2snesHST-v0.9.0-update.zip",
+    "02-sd2snesHST-v0.9.0-source.zip",
+    "03-sd2snesHST-v0.9.0-manifest.json",
+    "04-SHA256SUMS.txt"
+  ]
 }
