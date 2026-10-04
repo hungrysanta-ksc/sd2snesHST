@@ -2,13 +2,9 @@
   "schema_version": 1,
   "product": "sd2snesHST",
   "version": "0.9.0",
-  "release_status": "draft",
-  "candidate": "G13C44",
   "target": "FXPAK Pro / Mk.III STM32 + EP4CE15F17C8",
   "firmware_base": "official sd2snes 1.11.2 installation",
   "development_repository": "https://github.com/hungrysanta-ksc/fpga-cyclone4-game",
-  "implementation_commit": "35ef4aef14fc6abef6495a980b7f00f257e5174f",
-  "merged_development_commit": "92b4c5a05dc03e63ade15882cb679524cf712f22",
   "runtime_files": {
     "firmware.stm": {
       "bytes": 166816,
@@ -29,8 +25,7 @@
   },
   "save_formats": {
     "battery": "raw SRAM; MBC3 RTC appends 48 bytes and reads 44/48-byte footer",
-    "state_schema": "00350002",
-    "migration_from_c44": "none"
+    "state_schema": "00350002"
   },
   "diagnostic_file_logs": false,
   "excluded_runtime": [
@@ -50,15 +45,40 @@
       "commit": "7a5ff50528cd9c1d13ffb675e7df8506bffaa078"
     }
   },
-  "source_archive_note": "Pinned C44 source snapshot; MCU base is obtained by prepare_firmware.py at the pinned upstream commit. Build tools are external.",
+  "source_archive_note": "Includes pinned upstream MCU, mini FPGA and CGB boot build inputs; offline MCU preparation supported.",
   "assets": {
-    "sd2snesHST-v0.9.0-source.zip": {
-      "bytes": 436114,
-      "sha256": "ad0fc7d0c0b417fe0b33e432e81215c8108ca1e70beb5cb221f84e2bb4a7404b"
+    "01-sd2snesHST-v0.9.0-update.zip": {
+      "bytes": 353396,
+      "sha256": "1a0eb495167355633c1dd4b0ec7291ea4449e971a367b12ac293dcce9c06fdb6"
     },
-    "sd2snesHST-v0.9.0-update.zip": {
-      "bytes": 353567,
-      "sha256": "5bdc1fcb191100a0af093f590dab49c7db899ea3818e127f6f795a37c3934be5"
+    "02-sd2snesHST-v0.9.0-source.zip": {
+      "bytes": 1391336,
+      "sha256": "060b1a3a4626e32608dc4e0f5d0ce762b80879ada0b56f931046bec6bb164b86"
+    }
+  },
+  "package_status": "verified",
+  "source_commit": "a2b1fb59390a96f70bbc8588a63e465831e7e247",
+  "licenses": {
+    "own_fpga": "GPL-3.0-or-later",
+    "own_mcu": "GPL-2.0-only",
+    "own_independent_tools_renderer_docs": "MIT",
+    "upstream": "Original file/component notices retained"
+  },
+  "release_asset_order": [
+    "01-sd2snesHST-v0.9.0-update.zip",
+    "02-sd2snesHST-v0.9.0-source.zip",
+    "03-sd2snesHST-v0.9.0-manifest.json",
+    "04-SHA256SUMS.txt"
+  ],
+  "component_provenance": {
+    "gb_gbc_fpga_core": {
+      "project": "Gameboy_MiSTer",
+      "role": "GB/GBC FPGA execution core ported to FXPAK Pro"
+    },
+    "cgb_boot": {
+      "project": "SameBoy",
+      "via": "Gameboy_MiSTer/BootROMs",
+      "role": "Open-source CGB boot code used for startup; not the full SameBoy emulator"
     }
   }
 }
