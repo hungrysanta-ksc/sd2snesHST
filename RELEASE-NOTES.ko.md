@@ -1,20 +1,20 @@
-# sd2snesHST 0.9.0
+# sd2snesHST 0.9.1
 
-HungrySanTa의 FXPAK Pro 추가 코어 프로젝트 첫 릴리스입니다.
-0.9.0 버전은 **Gameboy_MiSTer 기반 GB/GBC FPGA 코어를 FXPAK Pro에 이식**했습니다. 초기 구동에는 **SameBoy 프로젝트에서 유래한 공개 CGB 부트 코드**를 사용합니다.
-(SFC 실기에서 게임보이컬러 전용 게임 실행을 위한 업데이트)
+- 8 MiB MBC5 ROM 로딩을 지원합니다. 원피스 한국어판의 실행·플레이와 다른 8 MiB ROM의 실행을 실기에서 확인했습니다.
+- Galaga: Destination Earth (USA)에서 두 로고 뒤 타이틀이 검게 나오던 문제를 수정했습니다.
+- 해리 포터와 마법사의 돌 (v010)에서 폴리오마기의 ‘보호 → 괴짜 웬델린’ 카드가 표시되지 않던 문제를 수정했습니다. 두 게임의 문제 장면을 원래 RGB555 색으로 표시하며 실기에서 정상 동작을 확인했습니다.
 
 ## 설치
 - FXPAK Pro / Mk.III 의 정상 설치된 공식 sd2snes 1.11.2 폴더 구조에 적용합니다.
-- 본체 전원을 끄고 기존 SD를 백업한 뒤, `01-sd2snesHST-v0.9.0-update.zip`의 압축을 풀어 그 안의 `sd2snes` 폴더에 있는 4개 파일을 SD 카드의 기존 `sd2snes` 폴더에 합쳐 복사하세요. RTC 시차 파일은 아래 안내에 따라 기존 설정을 유지합니다.
+- 본체 전원을 끄고 기존 SD를 백업한 뒤, `01-sd2snesHST-v0.9.1-update.zip`의 압축을 풀어 그 안의 `sd2snes` 폴더에 있는 4개 파일을 SD 카드의 기존 `sd2snes` 폴더에 합쳐 복사하세요. RTC 시차 파일은 아래 안내에 따라 기존 설정을 유지합니다.
 - 동봉 RTC 시차는 한국/일본용 +540이며 기존 사용자 설정이 맞으면 유지합니다.
 
 [사용 가이드](https://github.com/hungrysanta-ksc/sd2snesHST/blob/master/docs/USER-GUIDE.ko.md) · [호환성](https://github.com/hungrysanta-ksc/sd2snesHST/blob/master/docs/COMPATIBILITY.ko.md)
 
 ## 파일 설명
-- **01-sd2snesHST-v0.9.0-update.zip**: 설치용 업데이트와 사용 가이드.
-- **02-sd2snesHST-v0.9.0-source.zip**: 0.9.0 실행 소스·고정 MCU 원본·mini FPGA·CGB 부트 빌드 입력과 라이선스.
-- **03-sd2snesHST-v0.9.0-manifest.json**: 대상 보드·소스·실행 파일·ZIP의 대응 관계.
+- **01-sd2snesHST-v0.9.1-update.zip**: 설치용 업데이트와 사용 가이드.
+- **02-sd2snesHST-v0.9.1-source.zip**: 0.9.1 실행 소스·고정 MCU 원본·mini FPGA·CGB 부트 빌드 입력과 라이선스.
+- **03-sd2snesHST-v0.9.1-manifest.json**: 대상 보드·소스·실행 파일·ZIP의 대응 관계.
 - **04-SHA256SUMS.txt**: 위 3개 파일의 SHA256.
 
 GitHub 자동 생성 Source code ZIP은 사용자 안내 저장소의 사본이며 펌웨어 소스 묶음이 아닙니다.

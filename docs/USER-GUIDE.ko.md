@@ -1,7 +1,7 @@
 # sd2snesHST 사용 가이드
-**sd2snesHST 0.9.0 · GBC 코어 사용 가이드**
+**sd2snesHST 0.9.1 · GBC 코어 사용 가이드**
 
-0.9.0의 GB/GBC FPGA 코어는 [Gameboy_MiSTer](https://github.com/MiSTer-devel/Gameboy_MiSTer)를 FXPAK Pro에 이식했습니다. 초기 구동에는 Gameboy_MiSTer에 포함된 **[SameBoy](https://github.com/LIJI32/SameBoy) 유래 공개 CGB 부트 코드**를 사용합니다.
+0.9.1의 GB/GBC FPGA 코어는 [Gameboy_MiSTer](https://github.com/MiSTer-devel/Gameboy_MiSTer)를 FXPAK Pro에 이식했습니다. 초기 구동에는 Gameboy_MiSTer에 포함된 **[SameBoy](https://github.com/LIJI32/SameBoy) 유래 공개 CGB 부트 코드**를 사용합니다.
 
 ## 1. 준비물
 
@@ -15,7 +15,7 @@
 
 1. 본체 전원을 끄고 SD를 PC에 연결합니다.
 2. 기존 `sd2snes` 폴더를 백업합니다. 특히 `saves`, `gbcstates`, 기존 펌웨어와 설정을 보관합니다.
-3. `01-sd2snesHST-v0.9.0-update.zip`을 PC에 풀고, 그 안의 `sd2snes` 폴더에 있는 4개 파일을 SD 카드의 기존 `sd2snes` 폴더에 합쳐 복사합니다. RTC 시차 파일은 다음 단계에 따라 기존 설정을 유지합니다.
+3. `01-sd2snesHST-v0.9.1-update.zip`을 PC에 풀고, 그 안의 `sd2snes` 폴더에 있는 4개 파일을 SD 카드의 기존 `sd2snes` 폴더에 합쳐 복사합니다. RTC 시차 파일은 다음 단계에 따라 기존 설정을 유지합니다.
 4. 아래 RTC 시차 설정을 확인합니다. 이미 설정 파일이 있으면 자신의 값을 유지합니다.
 5. SD를 기기에 넣고 실행합니다.
 
@@ -142,7 +142,7 @@ RTC 게임은 SRAM 뒤에 48바이트 메타데이터를 기록합니다. 예를
 
 ## 8. 로그와 문제 보고
 
-0.9.0 배포판에서는 다음 로그를 새로 만들지 않습니다.
+0.9.1 배포판에서는 다음 로그를 새로 만들지 않습니다.
 
 - `sd2snes/gbcload/loadNNN.txt`
 - `sd2snes/gbcdiag/capNNN.g13d`
@@ -160,4 +160,4 @@ RTC 게임은 SRAM 뒤에 48바이트 메타데이터를 기록합니다. 예를
 
 일본판 포켓몬 크리스탈은 사용자가 정상 동작을 확인했습니다. 이 결과를 MBC30의 확장 ROM/RAM 전체 지원이나 전체 클리어 검증으로 확대하지 않습니다. MBC2/HuC 계열·카메라·센서·통신·진동·SGB 테두리·치트는 지원 범위 밖입니다.
 
-이 가이드는 sd2snesHST 0.9.0의 기능을 설명합니다. 모든 게임·보드·본체 조합의 동작을 보증하는 목록은 아닙니다.
+이 가이드는 sd2snesHST 0.9.1의 기능을 설명합니다. 모든 게임·보드·본체 조합의 동작을 보증하는 목록은 아닙니다.
